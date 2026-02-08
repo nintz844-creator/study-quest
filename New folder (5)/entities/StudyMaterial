@@ -1,0 +1,43 @@
+{
+  "name": "StudyMaterial",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the study material"
+    },
+    "content_type": {
+      "type": "string",
+      "enum": [
+        "pdf",
+        "powerpoint",
+        "image",
+        "text"
+      ],
+      "description": "Type of uploaded content"
+    },
+    "file_url": {
+      "type": "string",
+      "description": "URL to the uploaded file"
+    },
+    "extracted_text": {
+      "type": "string",
+      "description": "Text extracted from the material"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Subject category"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Topics covered in this material"
+    }
+  },
+  "required": [
+    "title",
+    "content_type"
+  ]
+}

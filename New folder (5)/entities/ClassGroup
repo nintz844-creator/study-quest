@@ -1,0 +1,33 @@
+{
+  "name": "ClassGroup",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Class or group name"
+    },
+    "code": {
+      "type": "string",
+      "description": "Join code for the class"
+    },
+    "description": {
+      "type": "string",
+      "description": "Class description"
+    },
+    "member_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Emails of class members"
+    },
+    "is_teacher": {
+      "type": "boolean",
+      "description": "Whether creator is a teacher"
+    }
+  },
+  "required": [
+    "name",
+    "code"
+  ]
+}
